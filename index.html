@@ -1,187 +1,527 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALIFNER Social Publisher | Privacy Policy</title>
-  <meta name="description" content="Privacy policy for ALIFNER Social Publisher.">
+  <meta name="description" content="ALIFNER Privacy Policy. Learn how we handle information when you visit our website.">
+  <title>Privacy Policy | Alifner</title>
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --bg: #f8f7f4;
+      --text: #292720;
+      --muted: #77746b;
+      --border: #e5e1d9;
+      --accent: #8b6b43;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      max-width: 760px;
-      margin: 48px auto;
-      padding: 0 22px;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      color: #242424;
-    }
-
-    h1 {
-      line-height: 1.2;
-    }
-
-    h2 {
-      margin-top: 30px;
-      font-size: 1.2rem;
-    }
-
-    .date {
-      color: #666;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "DM Sans", sans-serif;
+      line-height: 1.8;
+      font-size: 15px;
     }
 
     a {
-      color: #8b1e2d;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 40px, 1120px);
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      letter-spacing: 7px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 100px 0 72px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    .hero-description {
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .updated {
+      margin-top: 30px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 90px;
+      padding: 80px 0 110px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 30px;
+      align-self: start;
+    }
+
+    .sidebar-title {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar nav a {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .sidebar nav a:hover {
+      color: var(--accent);
+    }
+
+    .policy-section {
+      padding-bottom: 42px;
+      margin-bottom: 42px;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 30px;
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
+    }
+
+    .section-number {
+      font-size: 11px;
+      color: var(--accent);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      line-height: 1.3;
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+
+    .policy-section p {
+      color: #625f57;
+      margin-bottom: 14px;
+    }
+
+    .policy-section a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
     footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      color: #666;
+      background: #292720;
+      color: #f8f7f4;
+      padding: 55px 0 30px;
+    }
+
+    .footer-main {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      padding-bottom: 45px;
+    }
+
+    .footer-brand {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      letter-spacing: 6px;
+      margin-bottom: 12px;
+    }
+
+    .footer-tagline {
+      color: #b8b4aa;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      align-content: start;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .footer-links a {
+      color: #d2cec4;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #45433c;
+      padding-top: 22px;
+      color: #a6a297;
+      font-size: 11px;
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        min-height: 72px;
+      }
+
+      .brand {
+        font-size: 20px;
+        letter-spacing: 4px;
+      }
+
+      .nav-links {
+        gap: 14px;
+        font-size: 9px;
+      }
+
+      .hero {
+        padding: 70px 0 55px;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 55px 0 75px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .sidebar nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 20px;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      .footer-main {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 
 <body>
 
+  <header>
+    <div class="container nav">
+      <a href="/" class="brand">ALIFNER</a>
+
+      <nav class="nav-links">
+        <a href="/">Collection</a>
+        <a href="/story">Our Story</a>
+        <a href="/privacy" aria-current="page">Privacy</a>
+        <a href="https://www.etsy.com/shop/Alifner" target="_blank" rel="noopener noreferrer">
+          Shop on Etsy ↗
+        </a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>Privacy Policy</h1>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">ALIFNER · Your Privacy</p>
 
-    <p><strong>ALIFNER Social Publisher</strong></p>
+        <h1>Privacy<br>policy.</h1>
 
-    <p class="date">Effective Date: November 9, 2026</p>
+        <p class="hero-description">
+          A clear note about what happens when you visit this website.
+        </p>
 
-    <h2>1. Introduction</h2>
+        <p class="updated">
+          Last updated: November 9, 2026
+        </p>
+      </div>
+    </section>
 
-    <p>
-      ALIFNER Social Publisher is a personal application used to manage
-      and publish promotional content for the ALIFNER e-commerce brand.
-      This Privacy Policy explains how the application handles information
-      when publishing content to Pinterest.
-    </p>
+    <div class="container content">
 
-    <h2>2. Information We Process</h2>
+      <aside class="sidebar">
+        <p class="sidebar-title">On this page</p>
 
-    <p>
-      The application may process Pinterest authentication tokens,
-      Pinterest board IDs, product images, product titles, descriptions,
-      keywords, Etsy product links, publishing results, and error logs.
-    </p>
+        <nav>
+          <a href="#who-we-are">01. Who we are</a>
+          <a href="#information">02. Information collected</a>
+          <a href="#etsy">03. Etsy and external links</a>
+          <a href="#cookies">04. Cookies and analytics</a>
+          <a href="#use">05. How information is used</a>
+          <a href="#retention">06. Retention and security</a>
+          <a href="#rights">07. Your choices and rights</a>
+          <a href="#children">08. Children's privacy</a>
+          <a href="#changes">09. Changes</a>
+          <a href="#contact">10. Contact</a>
+        </nav>
+      </aside>
 
-    <p>
-      The application is not designed to collect information from
-      ALIFNER customers or website visitors.
-    </p>
+      <article>
 
-    <h2>3. How We Use Information</h2>
+        <section class="policy-section" id="who-we-are">
+          <p class="section-number">01</p>
+          <h2>Who we are</h2>
 
-    <p>Information is used to:</p>
+          <p>
+            This website is operated by Alifner (“we,” “us,” or “our”),
+            a leather goods and jacket brand based in Pakistan. For privacy
+            questions, contact us through the official Alifner Etsy shop.
+          </p>
+        </section>
 
-    <ul>
-      <li>Authenticate with Pinterest.</li>
-      <li>Create and publish Pinterest Pins.</li>
-      <li>Promote ALIFNER products and Etsy listings.</li>
-      <li>Manage publishing schedules.</li>
-      <li>Monitor publishing status and errors.</li>
-    </ul>
+        <section class="policy-section" id="information">
+          <p class="section-number">02</p>
+          <h2>Information collected on this website</h2>
 
-    <h2>4. Pinterest Integration</h2>
+          <p>
+            This website does not offer account registration, contact forms,
+            or on-site payment. If you add a product to your cart, the product
+            listing ID is saved in your browser’s local storage so the cart
+            remains available after a reload. This cart information is stored
+            on your device and is not sent to Alifner by this website.
+            The cart is cleared when you follow an Etsy link from this site.
+            You can also remove it by clearing this site’s browser storage.
+          </p>
 
-    <p>
-      When a Pin is published, the application may send its image,
-      title, description, keywords, and destination link to Pinterest.
-      Pinterest handles this information under its own privacy policy.
-    </p>
+          <p>
+            The website’s hosting provider may process technical request data,
+            such as IP address, browser details, and request time, to deliver
+            and secure the site. The provider’s privacy terms and log
+            retention settings apply to that processing.
+          </p>
+        </section>
 
-    <p>
-      <a href="https://policy.pinterest.com/en/privacy-policy">
-        Pinterest Privacy Policy
-      </a>
-    </p>
+        <section class="policy-section" id="etsy">
+          <p class="section-number">03</p>
+          <h2>Etsy and external links</h2>
 
-    <h2>5. Storage and Security</h2>
+          <p>
+            Product and shop links take you to Etsy. If you follow a link,
+            Etsy and its service providers may collect and use information
+            under Etsy’s own privacy policy and terms. Purchases, payments,
+            messages, shipping details, and order support are handled on Etsy.
+            We do not receive your payment card details through this website.
+            Review
+            <a href="https://www.etsy.com/legal/privacy/" target="_blank" rel="noopener noreferrer">
+              Etsy’s Privacy Policy
+            </a>
+            for details.
+          </p>
+        </section>
 
-    <p>
-      The application may run through GitHub Actions.
-      Pinterest credentials and tokens should be stored using
-      GitHub Actions secrets and should not be committed to source code.
-    </p>
+        <section class="policy-section" id="cookies">
+          <p class="section-number">04</p>
+          <h2>Cookies, local storage, and analytics</h2>
 
-    <p>
-      Reasonable security measures are used to protect credentials
-      and publishing information.
-    </p>
+          <p>
+            This website does not intentionally use analytics or advertising
+            cookies. It uses browser local storage for the cart as described
+            above. Local storage is separate from cookies.
+          </p>
 
-    <h2>6. Third-Party Services</h2>
+          <p>
+            The site loads typography from Google Fonts, which may receive
+            technical connection information when the font files are requested.
+            No font provider receives your cart contents through this site.
+          </p>
+        </section>
 
-    <p>The application may use:</p>
+        <section class="policy-section" id="use">
+          <p class="section-number">05</p>
+          <h2>How information is used</h2>
 
-    <ul>
-      <li>Pinterest API for publishing content.</li>
-      <li>GitHub repositories and GitHub Actions for application code and execution.</li>
-      <li>AI image-generation services when enabled.</li>
-    </ul>
+          <p>
+            Any technical information processed by the site’s host is used
+            to deliver pages, maintain security, and troubleshoot service
+            issues. Information you provide to Etsy is handled according to
+            Etsy’s policies and your interactions with the shop.
+          </p>
+        </section>
 
-    <p>
-      These services operate under their own terms and privacy policies.
-    </p>
+        <section class="policy-section" id="retention">
+          <p class="section-number">06</p>
+          <h2>Retention and security</h2>
 
-    <h2>7. Sharing</h2>
+          <p>
+            We do not maintain customer accounts or an order database
+            through this website. Cart listing IDs remain in your browser
+            until you leave for Etsy, remove items, or clear this site’s
+            browser storage.
+          </p>
 
-    <p>
-      ALIFNER does not sell or rent personal information.
-      Information is shared with third-party services only
-      when necessary to publish content or operate the application.
-    </p>
+          <p>
+            Hosting request logs, if enabled, are retained according to
+            the hosting provider’s settings. No internet transmission or
+            storage method can be guaranteed completely secure.
+          </p>
+        </section>
 
-    <h2>8. Retention and Revoking Access</h2>
+        <section class="policy-section" id="rights">
+          <p class="section-number">07</p>
+          <h2>Your choices and rights</h2>
 
-    <p>
-      Publishing records and application logs may be retained
-      for operational purposes.
-    </p>
+          <p>
+            Depending on where you live, you may have rights to request
+            access to, correction of, or deletion of personal information.
+            For information held by Etsy, contact Etsy or the shop through
+            Etsy.
+          </p>
 
-    <p>
-      Pinterest access can be revoked through Pinterest account settings.
-      Stored tokens should be removed from GitHub secrets
-      when they are no longer needed.
-    </p>
+          <p>
+            For information processed by this website’s host, contact us
+            through the shop and identify the page or interaction involved.
+          </p>
+        </section>
 
-    <h2>9. Children's Privacy</h2>
+        <section class="policy-section" id="children">
+          <p class="section-number">08</p>
+          <h2>Children’s privacy</h2>
 
-    <p>
-      This application is intended for business and personal
-      content management. It is not designed to collect
-      information from children.
-    </p>
+          <p>
+            This website is not designed to collect personal information
+            from children. If you believe a child has sent us personal
+            information through an external service, contact us through
+            the Etsy shop.
+          </p>
+        </section>
 
-    <h2>10. Policy Changes</h2>
+        <section class="policy-section" id="changes">
+          <p class="section-number">09</p>
+          <h2>Changes to this policy</h2>
 
-    <p>
-      This Privacy Policy may be updated if the application's
-      functionality or data handling practices change.
-      The latest version will be published on this page.
-    </p>
+          <p>
+            We may update this page when the site or its data practices
+            change. The date above shows when it was last revised.
+          </p>
+        </section>
 
-    <h2>11. Contact</h2>
+        <section class="policy-section" id="contact">
+          <p class="section-number">10</p>
+          <h2>Contact</h2>
 
-    <p>
-      <strong>ALIFNER</strong>
-      <br>
-      Email:
-      <a href="mailto:mmohsinkhalid@outlook.com">
-        mmohsinkhalid@outlook.com
-      </a>
-      <br>
-      Etsy:
-      <a href="https://www.etsy.com/shop/Alifner">
-        https://www.etsy.com/shop/Alifner
-      </a>
-    </p>
+          <p>
+            For privacy questions, message Alifner through the
+            <a href="https://www.etsy.com/shop/Alifner" target="_blank" rel="noopener noreferrer">
+              official Etsy shop
+            </a>.
+          </p>
+        </section>
 
+      </article>
+    </div>
   </main>
 
   <footer>
-    ALIFNER Social Publisher Privacy Policy
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <p class="footer-brand">ALIFNER</p>
+          <p class="footer-tagline">
+            Leather with character.<br>
+            Made for the long way around.
+          </p>
+        </div>
+
+        <nav class="footer-links">
+          <a href="/">Collection</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="https://www.etsy.com/shop/Alifner" target="_blank" rel="noopener noreferrer">
+            Etsy Shop ↗
+          </a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Alifner
+      </div>
+    </div>
   </footer>
 
 </body>
